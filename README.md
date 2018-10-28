@@ -1,6 +1,4 @@
-lab3
+Fest Finder
 ====
 
-Lab 3 for Intro HCI: Interacting with webpage elements
-
-Originally created by Scott Klemmer, Michael Bernstein, and a coalition of TAs. This version forked from https://github.com/IntroHCI/lab3 and modified by Philip Guo.
+Code taken from Lab 3 by Scott Klemmer, Michael Bernstein, and a coalition of TAs. Downloaded and used as initial skeleton code. 
