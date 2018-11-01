@@ -23,7 +23,7 @@ body {
 
 .jumbotron:after {
      content:"";
-     background: url("../images/festivalBackdrop.jpeg");
+     background: url("../images/sunset_fair.jpeg");
      opacity: 0.2;
      top: 0;
      left: 0;
