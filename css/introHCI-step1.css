@@ -17,6 +17,7 @@ body {
 }
 
 .jumbotron {
+	display: block;
 	position: relative;
 	background: none;
 	text-align: center;
