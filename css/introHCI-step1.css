@@ -24,7 +24,7 @@ body {
 .jumbotron:after {
      content:"";
      background: url("../images/sunset_fair.jpg");
-		text-align: center;
+     text-align: center;
      opacity: 0.2;
      top: 0;
      left: 0;
