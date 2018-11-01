@@ -20,6 +20,8 @@ body {
 	position: relative;
 	background: none;
 	text-align: center;
+	margin-left: auto;
+    	margin-right: auto;
 }
 
 .jumbotron:after {
