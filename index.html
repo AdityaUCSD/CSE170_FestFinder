@@ -2,39 +2,51 @@
 
 <html>
 <head>
+	<ul>
+		<li><a class = "active" href="index.html">Home</a></li>
+	</ul>	
 	<title>Fest Finder</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/introHCI.css" rel="stylesheet">
-
+	<link href="css/navBar.css" rel="stylesheet">
 </head>
 
 <body>
 	<div class="container">
-		<div class="jumbotron">
-			<h1>Fest Finder</h1>
-			<p>find a festival &middot; find local artists</p>
-			<button id="Get Started" class="btn btn-primary btn-lg">Get Started!</button>
-		</div>
-
-
-		<h4>Your Festivals</h4>
-		<div class="project" id="project1">
-			<a href="" class="thumbnail">
-				<img src="images/festivalBackdrop.jpg" alt="festival image" class="img">
-				<p>Whats coming up?</p>
-			</a>
-		</div>
-		
-		<h4>Your Artists</h4>
-		<div class="project" id="project1">
-			<a href="" class="thumbnail">
-				<img src="images/artists.jpg" alt="artist image" class="img">
-				<p>Who You'll be Seeing</p>
-			</a>
-		</div>
+					<div class="jumbotron">
+						<h1>Fest Finder</h1>
+						<p>Find a Festival &middot; Find Local Artists</p>
+					</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<h4>Find Festivals</h4>
+					<a href="events/eventHome.html">
+						<img src="images/festivalBackdrop.jpg" alt="festival image" class="img-thumbnail">
+						<button class="btn btn-primary btn-lg">Whats coming up?</button>
+					</a>
+				</div>
+				<div class="col-lg-6">
+					<h4>Find Artists</h4>
+					<a href="artists/artistsHome.html">
+						<img src="images/artists.jpg" alt="artist image" class="img-thumbnail">
+						<button class="btn btn-primary btn-lg">Who To See?</button>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+				</div>
+				<div class="col-lg-4">
+					<a href="favList.html">
+					<button id="list" class="btn btn-primary btn-lg">Your Favorites</button>
+					</a>
+				</div>
+				<div class="col-lg-4">
+				</div>
+			</div>
 	</div>
 
   <!-- JavaScript  -->
