@@ -19,6 +19,7 @@ body {
 .jumbotron {
 	position: relative;
 	background: none;
+	text-align: center;
 }
 
 .jumbotron:after {
