@@ -13,3 +13,4 @@ $('#name').click(hid2);
 function hid2(){
 	$('#findName').show();
 }
+

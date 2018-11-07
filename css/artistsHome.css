@@ -33,3 +33,13 @@ h2 {
 .dropdown:hover h2 {
 	display: none;
 }
+.dropdown-submenu {
+	position: relative;
+}
+#drop2 {
+	color: #4682b4;
+	
+}
+#drop1 {
+	padding: 12px 16px;
+}
