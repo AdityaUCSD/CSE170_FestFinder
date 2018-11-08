@@ -5,7 +5,7 @@
 
 /* applies to any <p> descendants of an element of class "example-class-selector" */
 .example-class-selector p {
-	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
+	/* Colors are in hexadecimal: http://www.colorpicker.com/ */
 	color: #CC00AA;
 }
 
@@ -16,15 +16,7 @@ body {
      padding: 20px;
 }
 
-.jumbotron {
-	position: relative;
-	background: none;
-}
 
-
-.jumbotron p {
-     color: #6e6e6e;
-}
 
 .project a {
      text-align: center;
