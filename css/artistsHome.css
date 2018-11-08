@@ -3,9 +3,8 @@
 	display: inline-block;
 	text-align: center;
 }
-#drop {
-	width: 350px;
-	height: 50px;
+#diff {
+	width: 150px;
 }
 .dropdown-menu {
 	display: none;

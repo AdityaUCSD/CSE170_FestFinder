@@ -2,32 +2,73 @@
 
 <html>
 <head>
-        <a href="../index.html">Home</a>
-	<a href="artistsHome.html">Type</a>
+	<ul>
+        	<li><a href="../index.html">Home</a></li>
+		<li><a href="artistsHome.html">Type</a></li>
+		<li><a class = "active" href="dance.html">Dance</a></li>
+	</ul>
+	
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-        <link href="css/introHCI.css" rel="stylesheet">
-
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="../css/artistsHome.css" rel="stylesheet">
+	<link href="../css/navBar.css" rel="stylesheet">
 </head>
 
 <body>
-
-
-                <h4>Choose Artist</h4>
-                <div class="artistInfo" id="musicArtist1">
-                        <a href="artistInfo.html" class="link">artist1
-                        </a>
-                </div>
-
-                <div class="artistInfo" id="musicArtist2">
-                        <a href="artistInfo.html" class="link">artist2
-                        </a>
-		
+	<div class="container">
+		<div class="jumbotron">
+                	<h1>Choose a Dancer</h1>
 		</div>
+		<br>
+		<div class="row">
+			<div class="col-lg-4">
+				<p style="font-size:35px;">Name 1</p>	
+			</div>
+			<div class="col-lg-8">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4">
+				<p style="font-size:15px;">1-2 sentence description</p>
+			</div>
+			<div class="col-lg-5">
+			</div>
+			<div class="col-lg-3">
+				<a href="">
+					<button type="button" class="btn btn-primary btn-md">View 
+					</button>
+				</a>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-lg-4">
+				<p style="font-size:35px;">Name 2</p>	
+			</div>
+			<div class="col-lg-8">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4">
+				<p style="font-size:15px;">1-2 sentence description</p>
+			</div>
+			<div class="col-lg-5">
+			</div>
+			<div class="col-lg-3">
+				<a href="">
+					<button type="button" class="btn btn-primary btn-md">View 
+					</button>
+				</a>
+			</div>
+		</div>
+	</div>
+
   <!-- JavaScript  -->
         <script src="https://code.jquery.com/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+	<script src="../js/introHCI.js"></script>
 </body>
 </html>

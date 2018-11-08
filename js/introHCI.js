@@ -1,16 +1,19 @@
-$('#menu').mouseenter(hid);
-function hid(){
-	$('#orText').hide();
+$(document).ready(function(){
 	$('#findName').hide();
-	$('#name').hide();
-}
-$('#menu').mouseleave(get);
-function get(){
-	$('#orText').show();
-	$('#name').show();
-}
-$('#name').click(hid2);
-function hid2(){
-	$('#findName').show();
-}
-
+	$('#message').hide();
+	$('#menu').mouseenter(function(){
+		$('#bottom').hide();
+	});
+	$('#menu').mouseleave(function(){
+		$('#bottom').show();
+	});
+	$('#name').click(function(){
+		$('#findName').show();
+	});
+	$('#findName').click(function(){
+		$('#message').fadeIn();
+	});
+	$('#name2').click(function(){
+		$('#message').fadeOut();
+	});
+});

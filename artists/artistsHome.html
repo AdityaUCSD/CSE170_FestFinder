@@ -1,3 +1,4 @@
+
 <!doctype html>
 
 <html>
@@ -21,60 +22,84 @@
                 	<h1>Search For Artists!</h1>
 		</div>
 		<div class="row">
-			<div class="col-lg-4">
-			</div>
-			<div class="col-lg-4">
-				<div class="dropdown" id="menu">
- 					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id ="drop">By Type
-						<span class="caret"></span>
-					</button>
-                			<div class="dropdown-menu">
-<<<<<<< HEAD
-						<a data-toggle="collapse" href="#collapse1" id="drop1">Music + -</a>
-						<div id="collapse1" class="panel-collapse collapse">
-							<a href="music.html" id="drop2">Pop ></a>
-							<a href="music.html" id="drop2">Country ></a>
-							<a href="music.html" id="drop2">Classical ></a>
-							<a href="music.html" id="drop2">Rap ></a>
-							<a href="music.html" id="drop2">Other ></a>
-  						</div>
-						<a href="comedy.html" id="comedy">Comedy ></a>
-                        			<a href="theater.html" id="theater">Theater ></a>
-                        			<a href="paint.html" id="paint">Paint ></a>
-                        			<a href="graphicArt.html" id="graphicArt">Graphic Art ></a>
-                        			<a href="dance.html">Dance ></a>
-						<a href="other.html">Other ></a>
-=======
-                        			<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#demo">Music<span class="caret"></span>
-                                                </button>
-                                                <div id="demo" class="collapse">
-                                                <a href="music.html" id="music">Pop</a>
-                                                <a href="music.html" id="music">Country</a>
-                                                <a href="music.html" id="music">Classical</a>
-                                                <a href="music.html" id="music">Rap</a>
-                                                <a href="music.html" id="music">Other</a>
-                                                </div>
-						<a href="comedy.html">Comedy</a>
-                        			<a href="theater.html">Theater
-                        			</a>
-                        			<a href="paint.html" class="link">Paint
-                        			</a>
-                        			<a href="graphicArt.html" class="link">Graphic Art
-                        			</a>
-                        			<a href="dance.html" class="link">Dance
-                        			</a>
-                        			<a href="other.html" class="link">Other
-                        			</a>
->>>>>>> fd8a76b651c4f37382a238af88e6ec47f1453987
+			<div class="col-md-4" id="top">
+			 <div class="thumbnail">
+				 <img src="IMAGE PATH HERE" alt="" style="width:100%">
+				<div class="caption">
+                                        <div class="dropdown" id="menu">
+                                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id ="diff">Music
+                                                <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+						<a href="popMusic.html">Pop></a>
+                                                <a href="countryMusic.html" >Country></a>
+                                                <a href="rapMusic.html">Rap></a>
+                                                <a href="otherMusic.html">Other></a>
+                                        </div>
 					</div>
 				</div>
+			  </div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-md-4">
+			 <div class="thumbnail">
+				<a href="comedy.html" target="_blank">
+				 <img src="IMAGE PATH HERE" alt="" style="width:100%">
+				 <div class="caption">
+                                        <button class="btn btn-default" type="button" id ="diff">Comedy
+                                        </button>
+				</div>
+				</a>
+			 </div>
 			</div>
+			<div class="col-md-4">
+			 <div class="thumbnail">
+				<a href="dance.html" target="_blank">
+				 <img src="IMAGE PATH HERE" alt="" style="width:100%">
+				 <div class="caption">
+                                        <button class="btn btn-default" type="button" id ="diff">Dance
+                                        </button>
+				 </div>
+				</a>
+			</div>
+		   </div>
 		</div>
 		<br>
 		<br>
-		<br>
+		<div class="row">
+			<div class="col-md-4">
+			 <div class="thumbnail" id="bottom">
+				<a href="theater.html" target="_blank">
+				 <img src="IMAGE PATH HERE" alt="" style="width:100%">
+				 <div class="caption">
+                                        <button class="btn btn-default" type="button" id ="diff">Theater
+                                        </button>
+				 </div>
+				</a>
+			</div>
+		   </div>
+			<div class="col-md-4">
+			 <div class="thumbnail">
+				<a href="paint.html" target="_blank">
+				 <img src="IMAGE PATH HERE" alt="" style="width:100%">
+				 <div class="caption">
+                                        <button class="btn btn-default" type="button" id ="diff">Paint
+                                        </button>
+				 </div>
+				</a>
+			</div>
+		   </div>
+			<div class="col-md-4">
+			 <div class="thumbnail">
+				<a href="other.html" target="_blank">
+				 <img src="IMAGE PATH HERE" alt="" style="width:100%">
+				 <div class="caption">
+                                        <button class="btn btn-default" type="button" id ="diff">Other
+                                        </button>
+				 </div>
+				</a>
+			</div>
+		   </div>
+		</div>
 		<div class="row">
 			<div class="col-lg-4">
 			</div>
@@ -84,23 +109,21 @@
 			<div class="col-lg-4">
 			</div>
 		</div>
-		<br>
-		<br>
-		<br>
 		<div class="row">	
-			<div class="col-lg-4">
+			<div class="col-md-4">
 			</div>
-			<div class="col-lg-4">
+			<div class="col-md-4">
 				<div class="form-group" id="name">
   					<label for="name">Enter Artist Name:</label>
-  					<textarea class="form-control" rows="1" id="name"></textarea>
-				</div>
-				<a href="noArtist.html">
+  					<textarea class="form-control" rows="1" id="name2"></textarea>
  					<button class="btn btn-primary" id="findName">Search !
 					</button>
-				</a>
+					<div class="message" id="message">
+					<p style="color:red;">No Artist Found. Please try again.</p>
+					</div>
+				</div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-md-4">
 			</div>
 		</div>
 		
@@ -112,3 +135,4 @@
 	<script src="../js/introHCI.js"></script>
 </body>
 </html>
+		
