@@ -2,52 +2,127 @@
 
 <html>
 <head>
-        <a href="../index.html"> Home</a>
+	<ul>
+        	<li><a href="../index.html">Home</a></li>
+		<li><a class = "active" href="eventsHome.html">Type</a></li>
+	</ul>
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-        <link href="css/introHCI.css" rel="stylesheet">
-
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="../css/artistsHome.css" rel="stylesheet">
+	<link href="../css/navBar.css" rel="stylesheet">
 </head>
 
 <body>
-
-
-                <h4>Type</h4>
-                <div class="types" id="type1">
-                        <a href="foodDrink.html" class="link">Food and Drink
-                        </a>
-                </div>
-
-                <div class="types" id="type2">
-                        <a href="music.html" class="link">Music
-                        </a>
-                </div>
-		
-                <div class="types" id="type3">
-                        <a href="film.html" class="link">Film
-                        </a>
-                </div>
-
-                <div class="types" id="type4">
-                        <a href="culture.html" class="link">Culture
-                        </a>
+	<div class="container">
+		<div class="jumbotron">
+                	<h1>Search For Events!</h1>
 		</div>
-		
-                <div class="types" id="type5">
-                        <a href="performing.html" class="link">Performing Art
-                        </a>
-                </div>
-
-                <div class="types" id="type6">
-                        <a href="other.html" class="link">Other
-                        </a>
+		<div class="row">
+			<div class="col-md-4" id="top">
+			 <div class="thumbnail">
+         	<a href="film.html" target="_blank">
+				 <img src="IMAGE PATH HERE" alt="" style="width:100%">
+				<div class="caption">
+            <button class="btn btn-default" type="button" id ="diff">Film
+            </button>
+					</div>
+				</div>
+			  </div>
+			<div class="col-md-4">
+			 <div class="thumbnail">
+				<a href="foodDrink.html" target="_blank">
+				 <img src="IMAGE PATH HERE" alt="" style="width:100%">
+				 <div class="caption">
+                                        <button class="btn btn-default" type="button" id ="diff">Food and Drink
+                                        </button>
+				</div>
+				</a>
+			 </div>
+			</div>
+			<div class="col-md-4">
+			 <div class="thumbnail">
+				<a href="music.html" target="_blank">
+				 <img src="IMAGE PATH HERE" alt="" style="width:100%">
+				 <div class="caption">
+                                        <button class="btn btn-default" type="button" id ="diff">Music
+                                        </button>
+				 </div>
+				</a>
+			</div>
+		   </div>
 		</div>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-md-4">
+			 <div class="thumbnail" id="bottom">
+				<a href="performing.html" target="_blank">
+				 <img src="IMAGE PATH HERE" alt="" style="width:100%">
+				 <div class="caption">
+                                        <button class="btn btn-default" type="button" id ="diff">Performing
+                                        </button>
+				 </div>
+				</a>
+			</div>
+		   </div>
+			<div class="col-md-4">
+			 <div class="thumbnail">
+				<a href="culture.html" target="_blank">
+				 <img src="IMAGE PATH HERE" alt="" style="width:100%">
+				 <div class="caption">
+                                        <button class="btn btn-default" type="button" id ="diff">Cultural
+                                        </button>
+				 </div>
+				</a>
+			</div>
+		   </div>
+			<div class="col-md-4">
+			 <div class="thumbnail">
+				<a href="other.html" target="_blank">
+				 <img src="IMAGE PATH HERE" alt="" style="width:100%">
+				 <div class="caption">
+                                        <button class="btn btn-default" type="button" id ="diff">Other
+                                        </button>
+				 </div>
+				</a>
+			</div>
+		   </div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4">
+			</div>
+			<div class="col-lg-4" id="orText">
+			<h2>Or</h2>
+			</div>
+			<div class="col-lg-4">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+			</div>
+			<div class="col-md-4">
+				<div class="form-group" id="name">
+  					<label for="name">Enter Event Name:</label>
+  					<textarea class="form-control" rows="1" id="name2"></textarea>
+ 					<button class="btn btn-primary" id="findName">Search !
+					</button>
+					<div class="message" id="message">
+					<p style="color:red;">No Artist Found. Please try again.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+			</div>
+		</div>
+
+	</div>
 
   <!-- JavaScript  -->
         <script src="https://code.jquery.com/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+	<script src="../js/introHCI.js"></script>
 </body>
 </html>
-
