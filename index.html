@@ -2,56 +2,63 @@
 
 <html>
 <head>
+	<ul>
+		<li><a class = "active" href="index.html">Home</a></li>
+		<div class="col-lg-10"> </div>
+		<a href ="logInScreen.html ">
+			<button id="logInButton"type="button" align="center" class="btn btn-primary" disabled>Log In</button>
+		</a>
+	</ul>
+
 	<title>Fest Finder</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/introHCI.css" rel="stylesheet">
+	<link href="css/introHCI-step1.css" rel="stylesheet">
 	<link href="css/navBar.css" rel="stylesheet">
 </head>
 
 <body>
 	<div class="container">
-				<div class="row">
-					<div class="col-lg-5">
-						<div class="jumbotron">
-							<h1>Fest Finder</h1>
-							<p>Find Events &middot; Find Local Artists</p>
-						</div>
-					</div>
-					<div class="col-lg-3">
-					</div>
-
-
-				</div>
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="form-group" id="name">
-	  					<label for="name">Username:</label>
-	  					<textarea class="form-control" rows="1" id="name2"></textarea>
-						<div class="message" id="message">
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="form-group" id="name">
-	  					<label for="name">Password:</label>
-	  					<textarea class="form-control" rows="1" id="name2"></textarea>
-							<a href="homeScreen.html">
-									<button class="btn btn-default" type="button" id ="diff">Log In!
-									</button>
-								</div>
-							</a>
-						<div class="message" id="message">
-						</div>
-					</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="jumbotron">
+					<h1>Fest Finder</h1>
+					<p>Find Events &middot; Find Local Artists</p>
+					<a href="trending.html">
+					<button id="list2" type="button" class="btn btn-primary">Trending Now!</button>
+					</a>
+					<a href="favList.html">
+					<button id="list" type="button" class="btn btn-primary">Your Favorites</button>
+					</a>
 				</div>
 			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-6">
+				<a href="events/eventHome.html">
+					<img src="images/festivalBackdrop.jpg" alt="festival image" class="img-thumbnail">
+					<button class="btn btn-primary btn-lg">Events Coming Up</button>
+				</a>
+			</div>
+			<div class="col-lg-6">
+				<a href="artists/artistsHome.html">
+					<img src="images/artists.jpg" alt="artist image" class="img-thumbnail">
+					<button class="btn btn-primary btn-lg">Artists To See</button>
+				</a>
+			</div>
+		</div>
 	</div>
 
-  <!-- JavaScript  -->
+	<!-- JavaScript  -->
 	<script src="https://code.jquery.com/jquery.js"></script>
+	<script 	document.getElementById("Button").disabled = false></script>
+
 	<script src="js/bootstrap.min.js"></script>
+
+
 </body>
 </html>
