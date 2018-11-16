@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	counter = 0;
 	$('#findName').hide();
 	$('#message').hide();
 	$('#menu').mouseenter(function(){
@@ -80,6 +79,36 @@ $(document).ready(function(){
 			$('#link6').html(favorite6);
 		}
 	}
+	//display favorite7
+	var str7;
+	var string7 = localStorage.getItem('name7');
+	if (string7){
+		str7 = string7;
+		var favorite7 = str7.link(localStorage.getItem('url7'));
+		if(favorite7){
+			$('#link7').html(favorite7);
+		}
+	}
+	//display favorite8
+	var str8;
+	var string8 = localStorage.getItem('name8');
+	if (string8){
+		str8= string8;
+		var favorite8 = str8.link(localStorage.getItem('url8'));
+		if(favorite8){
+			$('#link8').html(favorite8);
+		}
+	}
+	//display favorite9
+	var str9;
+	var string9 = localStorage.getItem('name9');
+	if (string9){
+		str9= string9;
+		var favorite9 = str9.link(localStorage.getItem('url9'));
+		if(favorite9){
+			$('#link9').html(favorite9);
+		}
+	}
 	
 	
 	//click favorite on comedian 1
@@ -125,6 +154,27 @@ $(document).ready(function(){
 		localStorage.setItem('url6',page6);
 		localStorage.setItem('name6',comedianName6);
 	});
+	//click favorite on music 3
+	$('#comedian3').click(function(){
+		var comedianName7 = "Nomojo";
+		var page7 = "artists/artistsData/comedian3.html";
+		localStorage.setItem('url7',page7);
+		localStorage.setItem('name7',comedianName7);
+	});
+	//click favorite on dancer2
+	$('#dancer2').click(function(){
+		var comedianName8 = "Los Bailadores del Barrio";
+		var page8 = "artists/artistsData/dancer2.html";
+		localStorage.setItem('url8',page8);
+		localStorage.setItem('name8',comedianName8);
+	});
+	//click favorite on dancer3
+	$('#dancer3').click(function(){
+		var comedianName9 = "USD Torero Dance Team ";
+		var page9 = "artists/artistsData/dancer3.html";
+		localStorage.setItem('url9',page9);
+		localStorage.setItem('name9',comedianName9);
+	});
 	
 
 
@@ -139,6 +189,8 @@ $(document).ready(function(){
 		localStorage.clear();
 		counter = 0;
 	});
+	
+
 	
 	
 });
