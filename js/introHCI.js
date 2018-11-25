@@ -117,6 +117,10 @@ $(document).ready(function(){
 		var page = "artists/artistsData/comedian1.html";
 		sessionStorage.setItem('url1',page);
 		sessionStorage.setItem('name1',comedianName);
+		var x = document.getElementById("favComedian1");
+    		if (x.innerHTML === "Favorite this artist!") {
+        		x.innerHTML = "Favorited!";
+    		} 
 	});
 	
 	//click favorite on comedian 2
@@ -125,6 +129,10 @@ $(document).ready(function(){
 		var page2 = "artists/artistsData/comedian2.html";
 		sessionStorage.setItem('url2',page2);
 		sessionStorage.setItem('name2',comedianName2);
+		var x = document.getElementById("favComedian2");
+    		if (x.innerHTML === "Favorite this artist!") {
+        		x.innerHTML = "Favorited!";
+    		} 
 	});
 	//click favorite on music 1
 	$('#rapFav').click(function(){
@@ -132,6 +140,10 @@ $(document).ready(function(){
 		var page3 = "artists/artistsData/rapArtist1.html";
 		sessionStorage.setItem('url3',page3);
 		sessionStorage.setItem('name3',comedianName3);
+		var x = document.getElementById("rapFav");
+    		if (x.innerHTML === "Favorite this artist!") {
+        		x.innerHTML = "Favorited!";
+    		} 
 	});
 	//click favorite on music 2
 	$('#popFav').click(function(){
@@ -139,6 +151,10 @@ $(document).ready(function(){
 		var page4 = "artists/artistsData/popArtist1.html";
 		sessionStorage.setItem('url4',page4);
 		sessionStorage.setItem('name4',comedianName4);
+		var x = document.getElementById("popFav");
+    		if (x.innerHTML === "Favorite this artist!") {
+        		x.innerHTML = "Favorited!";
+    		} 
 	});
 	//click favorite on music 3
 	$('#countryFav').click(function(){
@@ -146,6 +162,10 @@ $(document).ready(function(){
 		var page5 = "artists/artistsData/countryArtist1.html";
 		sessionStorage.setItem('url5',page5);
 		sessionStorage.setItem('name5',comedianName5);
+		var x = document.getElementById("countryFav");
+    		if (x.innerHTML === "Favorite this artist!") {
+        		x.innerHTML = "Favorited!";
+    		} 
 	});
 	//click favorite on music 3
 	$('#dancer1Fav').click(function(){
@@ -153,6 +173,10 @@ $(document).ready(function(){
 		var page6 = "artists/artistsData/dancer1.html";
 		sessionStorage.setItem('url6',page6);
 		sessionStorage.setItem('name6',comedianName6);
+		var x = document.getElementById("dancer1Fav");
+    		if (x.innerHTML === "Favorite this artist!") {
+        		x.innerHTML = "Favorited!";
+    		} 
 	});
 	//click favorite on music 3
 	$('#comedian3').click(function(){
@@ -160,6 +184,10 @@ $(document).ready(function(){
 		var page7 = "artists/artistsData/comedian3.html";
 		sessionStorage.setItem('url7',page7);
 		sessionStorage.setItem('name7',comedianName7);
+		var x = document.getElementById("comedian3");
+    		if (x.innerHTML === "Favorite this artist!") {
+        		x.innerHTML = "Favorited!";
+    		} 
 	});
 	//click favorite on dancer2
 	$('#dancer2').click(function(){
@@ -167,6 +195,10 @@ $(document).ready(function(){
 		var page8 = "artists/artistsData/dancer2.html";
 		sessionStorage.setItem('url8',page8);
 		sessionStorage.setItem('name8',comedianName8);
+		var x = document.getElementById("dancer2");
+    		if (x.innerHTML === "Favorite this artist!") {
+        		x.innerHTML = "Favorited!";
+    		} 
 	});
 	//click favorite on dancer3
 	$('#dancer3').click(function(){
@@ -174,6 +206,10 @@ $(document).ready(function(){
 		var page9 = "artists/artistsData/dancer3.html";
 		sessionStorage.setItem('url9',page9);
 		sessionStorage.setItem('name9',comedianName9);
+		var x = document.getElementById("dancer3");
+    		if (x.innerHTML === "Favorite this artist!") {
+        		x.innerHTML = "Favorited!";
+    		} 
 	});
 	
 
