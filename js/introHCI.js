@@ -211,6 +211,72 @@ $(document).ready(function(){
         		x.innerHTML = "Favorited!";
     		} 
 	});
+	//click favorite on dancer3
+	$('#event1').click(function(){
+		var comedianName10 = "SD Asian Film Festival";
+		var page10 = "events/eventsData/filmEvent1.html";
+		sessionStorage.setItem('url10',page10);
+		sessionStorage.setItem('name10',comedianName10);
+		var x = document.getElementById("event1");
+    		if (x.innerHTML === "Favorite this event!") {
+        		x.innerHTML = "Favorited!";
+    		} 
+	});
+	//click favorite on dancer3
+	$('#event2').click(function(){
+		var comedianName11 = "45th Annual Mexican-American Film Festival";
+		var page11 = "events/eventsData/filmEvent2.html";
+		sessionStorage.setItem('url11',page11);
+		sessionStorage.setItem('name11',comedianName11);
+		var x = document.getElementById("event2");
+    		if (x.innerHTML === "Favorite this event!") {
+        		x.innerHTML = "Favorited!";
+    		} 
+	});
+	//click favorite on dancer3
+	$('#event3').click(function(){
+		var comedianName12 = "Children's Film Fest";
+		var page12 = "events/eventsData/filmEvent3.html";
+		sessionStorage.setItem('url12',page12);
+		sessionStorage.setItem('name12',comedianName12);
+		var x = document.getElementById("event3");
+    		if (x.innerHTML === "Favorite this event!") {
+        		x.innerHTML = "Favorited!";
+    		} 
+	});
+	//click favorite on dancer3
+	$('#event4').click(function(){
+		var comedianName13 = "SD Mac and Cheese Festival";
+		var page13 = "events/eventsData/foodDrinkEvent1.html";
+		sessionStorage.setItem('url13',page13);
+		sessionStorage.setItem('name13',comedianName13);
+		var x = document.getElementById("event4");
+    		if (x.innerHTML === "Favorite this event!") {
+        		x.innerHTML = "Favorited!";
+    		} 
+	});
+	//click favorite on dancer3
+	$('#event5').click(function(){
+		var comedianName14 = "The Quintessential Festival";
+		var page14 = "events/eventsData/foodDrinkEvent2.html";
+		sessionStorage.setItem('url14',page14);
+		sessionStorage.setItem('name14',comedianName14);
+		var x = document.getElementById("event5");
+    		if (x.innerHTML === "Favorite this event!") {
+        		x.innerHTML = "Favorited!";
+    		} 
+	});
+	//click favorite on dancer3
+	$('#event6').click(function(){
+		var comedianName15 = "SD Bay Wine and Food Festival";
+		var page15 = "events/eventsData/foodDrinkEvent3.html";
+		sessionStorage.setItem('url15',page15);
+		sessionStorage.setItem('name15',comedianName15);
+		var x = document.getElementById("event6");
+    		if (x.innerHTML === "Favorite this event!") {
+        		x.innerHTML = "Favorited!";
+    		} 
+	});
 	
 
 
