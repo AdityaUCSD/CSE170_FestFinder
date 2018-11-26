@@ -76,19 +76,33 @@
 				localStorage.setItem('logged_in', 1);
 			}
 			else {
-				location.reload();
+				if(userName){
+					$("#welcomeName").html("Welcome");
+					$("#logInButton").html("Log In");
+				localStorage.setItem('logged_in', 0);
 			}
+		}
 
 		});
 
 	</script>
 
-<script>
- function loadFunction() {
-	localStorage.setItem('logged_in', 0);
+	<script>
+	function loadFunction() {
+		if (localStorage.getItem("logged_in") === null) {
+			localStorage.setItem('logged_in', 0);
+		}
+		else if(localStorage.getItem("logged_in") == 1){
+			if("user_name" in localStorage){
+				var userName = localStorage.getItem("user_name");
+				$("#welcomeName").html("Welcome " + userName + "!");
+				$("#logInButton").html("Log Out");
+			}
+		}
+	}
+	</script>
 
-}
-</script>
+
 
 </body>
 </html>
