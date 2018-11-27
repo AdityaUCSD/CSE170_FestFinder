@@ -109,8 +109,98 @@ $(document).ready(function(){
 			$('#link9').html(favorite9);
 		}
 	}
+	//display favorite10
+	var str10;
+	var string10 = sessionStorage.getItem('name10');
+	if (string10){
+		str10= string10;
+		var favorite10 = str10.link(sessionStorage.getItem('url10'));
+		if(favorite10){
+			$('#link10').html(favorite10);
+		}
+	}
 	
+	//display favorite11
+	var str11;
+	var string11 = sessionStorage.getItem('name11');
+	if (string11){
+		str11= string11;
+		var favorite11 = str11.link(sessionStorage.getItem('url11'));
+		if(favorite11){
+			$('#link11').html(favorite11);
+		}
+	}
 	
+	//display favorite12
+	var str12;
+	var string12 = sessionStorage.getItem('name12');
+	if (string12){
+		str12= string12;
+		var favorite12 = str12.link(sessionStorage.getItem('url12'));
+		if(favorite12){
+			$('#link12').html(favorite12);
+		}
+	}
+	//display favorite13
+	var str13;
+	var string13 = sessionStorage.getItem('name13');
+	if (string13){
+		str13= string13;
+		var favorite13 = str13.link(sessionStorage.getItem('url13'));
+		if(favorite13){
+			$('#link13').html(favorite13);
+		}
+	}
+	//display favorite14
+	var str14;
+	var string14 = sessionStorage.getItem('name14');
+	if (string14){
+		str14= string14;
+		var favorite14 = str14.link(sessionStorage.getItem('url14'));
+		if(favorite14){
+			$('#link14').html(favorite14);
+		}
+	}
+	//display favorite15
+	var str15;
+	var string15 = sessionStorage.getItem('name15');
+	if (string15){
+		str15= string15;
+		var favorite15 = str15.link(sessionStorage.getItem('url15'));
+		if(favorite15){
+			$('#link15').html(favorite15);
+		}
+	}
+	//display favorite16
+	var str16;
+	var string16 = sessionStorage.getItem('name16');
+	if (string16){
+		str16= string16;
+		var favorite16 = str16.link(sessionStorage.getItem('url16'));
+		if(favorite16){
+			$('#link16').html(favorite16);
+		}
+	}
+	//display favorite17
+	var str17;
+	var string17 = sessionStorage.getItem('name17');
+	if (string17){
+		str17= string17;
+		var favorite17 = str17.link(sessionStorage.getItem('url17'));
+		if(favorite17){
+			$('#link17').html(favorite17);
+		}
+	}
+	//display favorite18
+	var str18;
+	var string18 = sessionStorage.getItem('name18');
+	if (string18){
+		str18= string18;
+		var favorite18 = str18.link(sessionStorage.getItem('url18'));
+		if(favorite18){
+			$('#link18').html(favorite18);
+		}
+	}
 	//click favorite on comedian 1
 	$('#favComedian1').click(function(){
 		var comedianName = "Joe Coffee";
@@ -212,22 +302,11 @@ $(document).ready(function(){
     		} 
 	});
 	//click favorite on dancer3
-	$('#event1').click(function(){
+	$('#event2').click(function(){
 		var comedianName10 = "SD Asian Film Festival";
 		var page10 = "events/eventsData/filmEvent1.html";
 		sessionStorage.setItem('url10',page10);
 		sessionStorage.setItem('name10',comedianName10);
-		var x = document.getElementById("event1");
-    		if (x.innerHTML === "Favorite this event!") {
-        		x.innerHTML = "Favorited!";
-    		} 
-	});
-	//click favorite on dancer3
-	$('#event2').click(function(){
-		var comedianName11 = "45th Annual Mexican-American Film Festival";
-		var page11 = "events/eventsData/filmEvent2.html";
-		sessionStorage.setItem('url11',page11);
-		sessionStorage.setItem('name11',comedianName11);
 		var x = document.getElementById("event2");
     		if (x.innerHTML === "Favorite this event!") {
         		x.innerHTML = "Favorited!";
@@ -235,10 +314,10 @@ $(document).ready(function(){
 	});
 	//click favorite on dancer3
 	$('#event3').click(function(){
-		var comedianName12 = "Children's Film Fest";
-		var page12 = "events/eventsData/filmEvent3.html";
-		sessionStorage.setItem('url12',page12);
-		sessionStorage.setItem('name12',comedianName12);
+		var comedianName11 = "45th Annual Mexican-American Film Festival";
+		var page11 = "events/eventsData/filmEvent2.html";
+		sessionStorage.setItem('url11',page11);
+		sessionStorage.setItem('name11',comedianName11);
 		var x = document.getElementById("event3");
     		if (x.innerHTML === "Favorite this event!") {
         		x.innerHTML = "Favorited!";
@@ -246,10 +325,10 @@ $(document).ready(function(){
 	});
 	//click favorite on dancer3
 	$('#event4').click(function(){
-		var comedianName13 = "SD Mac and Cheese Festival";
-		var page13 = "events/eventsData/foodDrinkEvent1.html";
-		sessionStorage.setItem('url13',page13);
-		sessionStorage.setItem('name13',comedianName13);
+		var comedianName12 = "Children's Film Fest";
+		var page12 = "events/eventsData/filmEvent3.html";
+		sessionStorage.setItem('url12',page12);
+		sessionStorage.setItem('name12',comedianName12);
 		var x = document.getElementById("event4");
     		if (x.innerHTML === "Favorite this event!") {
         		x.innerHTML = "Favorited!";
@@ -257,10 +336,10 @@ $(document).ready(function(){
 	});
 	//click favorite on dancer3
 	$('#event5').click(function(){
-		var comedianName14 = "The Quintessential Festival";
-		var page14 = "events/eventsData/foodDrinkEvent2.html";
-		sessionStorage.setItem('url14',page14);
-		sessionStorage.setItem('name14',comedianName14);
+		var comedianName13 = "SD Mac and Cheese Festival";
+		var page13 = "events/eventsData/foodDrinkEvent1.html";
+		sessionStorage.setItem('url13',page13);
+		sessionStorage.setItem('name13',comedianName13);
 		var x = document.getElementById("event5");
     		if (x.innerHTML === "Favorite this event!") {
         		x.innerHTML = "Favorited!";
@@ -268,11 +347,55 @@ $(document).ready(function(){
 	});
 	//click favorite on dancer3
 	$('#event6').click(function(){
+		var comedianName14 = "The Quintessential Festival";
+		var page14 = "events/eventsData/foodDrinkEvent2.html";
+		sessionStorage.setItem('url14',page14);
+		sessionStorage.setItem('name14',comedianName14);
+		var x = document.getElementById("event6");
+    		if (x.innerHTML === "Favorite this event!") {
+        		x.innerHTML = "Favorited!";
+    		} 
+	});
+	//click favorite on dancer3
+	$('#event7').click(function(){
 		var comedianName15 = "SD Bay Wine and Food Festival";
 		var page15 = "events/eventsData/foodDrinkEvent3.html";
 		sessionStorage.setItem('url15',page15);
 		sessionStorage.setItem('name15',comedianName15);
-		var x = document.getElementById("event6");
+		var x = document.getElementById("event7");
+    		if (x.innerHTML === "Favorite this event!") {
+        		x.innerHTML = "Favorited!";
+    		} 
+	});
+	//click favorite on dancer3
+	$('#event8').click(function(){
+		var comedianName16 = "Kaboo Del Mar";
+		var page16 = "events/eventsData/musicEvent1.html";
+		sessionStorage.setItem('url16',page16);
+		sessionStorage.setItem('name16',comedianName16);
+		var x = document.getElementById("event8");
+    		if (x.innerHTML === "Favorite this event!") {
+        		x.innerHTML = "Favorited!";
+    		} 
+	});
+	//click favorite on dancer3
+	$('#event9').click(function(){
+		var comedianName17 = "91 X Fest";
+		var page17 = "events/eventsData/musicEvent2.html";
+		sessionStorage.setItem('url17',page17);
+		sessionStorage.setItem('name17',comedianName17);
+		var x = document.getElementById("event9");
+    		if (x.innerHTML === "Favorite this event!") {
+        		x.innerHTML = "Favorited!";
+    		} 
+	});
+	//click favorite on dancer3
+	$('#event10').click(function(){
+		var comedianName18 = "Star Wars In Concert";
+		var page18 = "events/eventsData/musicEvent3.html";
+		sessionStorage.setItem('url18',page18);
+		sessionStorage.setItem('name18',comedianName18);
+		var x = document.getElementById("event10");
     		if (x.innerHTML === "Favorite this event!") {
         		x.innerHTML = "Favorited!";
     		} 
