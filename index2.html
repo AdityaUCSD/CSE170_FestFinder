@@ -1,0 +1,136 @@
+<!doctype html>
+
+<html>
+<body onload="loadFunction()">
+<head>
+	<ul>
+		<div class="col-lg-10"> 
+		<li><a class = "active" href="index2.html">Home</a></li>
+		<li><a href="events/eventHome.html">Events</a></li>
+		<li><a href="artists/artistsHome.html">Artists</a></li>
+		<li><a href="favList.html">Your Favorites</a></li>
+		</div>
+		<button id="logInButton"type="button" class="btn btn-primary btn-lg" >Log In</button>
+
+<!--		<a href ="logInScreen.html ">
+			<button id="logInButton"type="button" class="btn btn-primary btn-lg" >Log In</button>
+		</a> -->
+	</ul>
+
+	<title>Fest Finder</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/introHCI.css" rel="stylesheet">
+	<link href="css/introHCI-step1.css" rel="stylesheet">
+	<link href="css/navBar.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="jumbotron">
+					<h3 id="welcomeName"> Welcome </h3>
+					<h1>Fest Finder</h1>
+					<p>Find Events &middot; Find Local Artists</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<h2>Trending Now</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<a href="">
+						<img src="" alt="" style="width:100%">
+						<div class="caption">
+							<button class="btn btn-default" type="button" id ="diff">Artist1
+							</button>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<a href="">
+						<img src="" alt="" style="width:100%">
+						<div class="caption">
+							<button class="btn btn-default" type="button" id ="diff">Event1
+							</button>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<a href="">
+						<img src="" alt="" style="width:100%">
+						<div class="caption">
+							<button class="btn btn-default" type="button" id ="diff">Artist2
+							</button>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<a href="">
+						<img src="" alt="" style="width:100%">
+						<div class="caption">
+							<button class="btn btn-default" type="button" id ="diff">Artist2
+							</button>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<a href="">
+						<img src="" alt="" style="width:100%">
+						<div class="caption">
+							<button class="btn btn-default" type="button" id ="diff">Event2
+							</button>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- JavaScript  -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/introHCI.js"></script>
+	<script>
+		$("#logInButton").click(function(){
+			if(localStorage.getItem("logged_in") == 0){
+				var userName = prompt("User Name:");
+				var userPass = prompt("Password:");
+
+				if(userName){
+					localStorage.setItem('user_name', userName);
+					localStorage.setItem('user_pass', userPass);
+					$("#welcomeName").html("Welcome " + userName + "!");
+					$("#logInButton").html("Log Out");
+				}
+				localStorage.setItem('logged_in', 1);
+			}
+			else {
+				location.reload();
+			}
+
+		});
+
+	</script>
+<script>
+ function loadFunction() {
+	localStorage.setItem('logged_in', 0);
+
+}
+</script>
+</body>
+</html>
+
