@@ -2,10 +2,14 @@
 <!doctype html>
 
 <html>
+<body onload="loadFunction()">
 <head>
 	<ul>
 		<li><a href="../index.html">Home</a></li>
 		<li><a class = "active" href="artistsHome.html">Explore Artists</a></li>
+		<div class="col-lg-8"> </div>
+		<button id="logInButton"type="button" class="btn btn-primary btn-lg" >Log In</button>
+
 	</ul>
 
 
@@ -59,39 +63,48 @@
 				</div>
 			</div>
 		</div>
-
-
-<!--		<div class="row">
-			<div class="col-lg-4">
-			</div>
-			<div class="col-lg-4" id="orText">
-
-			<h2>Or</h2>
-			</div>
-			<div class="col-lg-4">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-			</div>
-			<div class="col-md-4">
-				<div class="form-group" id="name">
-					<label for="name">Enter Artist Name:</label>
-					<textarea class="form-control" rows="1" id="name2"></textarea>
-					<button class="btn btn-primary" id="findName">Search !
-					</button>
-					<div class="message" id="message">
-						<p style="color:red;">No Artist Found. Please try again.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-			</div>
-		</div> -->
-
 	</div>
 
 	<!-- JavaScript  -->
+	<script>
+		$("#logInButton").click(function(){
+			if(localStorage.getItem("logged_in") == 0){
+				var userName = prompt("User Name:");
+				var userPass = prompt("Password:");
+
+				if(userName){
+					localStorage.setItem('user_name', userName);
+					localStorage.setItem('user_pass', userPass);
+					$("#logInButton").html("Log Out");
+				}
+				localStorage.setItem('logged_in', 1);
+			}
+			else {
+				if(localStorage.getItem("logged_in") == 1){
+					$("#logInButton").html("Log In");
+				localStorage.setItem('logged_in', 0);
+			}
+		}
+
+		});
+
+	</script>
+
+	<script>
+	function loadFunction() {
+		if (localStorage.getItem("logged_in") === null) {
+			localStorage.setItem('logged_in', 0);
+		}
+		else if(localStorage.getItem("logged_in") == 1){
+			if("user_name" in localStorage){
+				var userName = localStorage.getItem("user_name");
+				$("#logInButton").html("Log Out");
+			}
+		}
+	}
+	</script>
+
+
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../js/introHCI.js"></script>
