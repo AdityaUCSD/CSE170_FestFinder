@@ -1,11 +1,38 @@
 $(document).ready(function(){
-	$('#findName').hide();
-	$('#message').hide();
-	$('#menu').mouseenter(function(){
-		$('#bottom').hide();
+	$('#p1').hide();
+	$('#p2').hide();
+	$('#p3').hide();
+	$('#p4').hide();
+	$('#p5').hide();
+	$('#tr1').mouseenter(function(){
+		$('#p1').show();
 	});
-	$('#menu').mouseleave(function(){
-		$('#bottom').show();
+	$('#tr1').mouseleave(function(){
+		$('#p1').hide();
+	});
+	$('#tr2').mouseenter(function(){
+		$('#p2').show();
+	});
+	$('#tr2').mouseleave(function(){
+		$('#p2').hide();
+	});
+	$('#tr3').mouseenter(function(){
+		$('#p3').show();
+	});
+	$('#tr3').mouseleave(function(){
+		$('#p3').hide();
+	});
+	$('#tr4').mouseenter(function(){
+		$('#p4').show();
+	});
+	$('#tr4').mouseleave(function(){
+		$('#p4').hide();
+	});
+	$('#tr5').mouseenter(function(){
+		$('#p5').show();
+	});
+	$('#tr5').mouseleave(function(){
+		$('#p5').hide();
 	});
 	$('#name').click(function(){
 		$('#findName').show();
