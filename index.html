@@ -76,7 +76,7 @@
 				localStorage.setItem('logged_in', 1);
 			}
 			else {
-				if(userName){
+				if(localStorage.getItem("logged_in") == 1){
 					$("#welcomeName").html("Welcome");
 					$("#logInButton").html("Log In");
 				localStorage.setItem('logged_in', 0);
