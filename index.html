@@ -5,7 +5,7 @@
 <head>
 	<ul>
 		<li><a class = "active" href="index.html">Home</a></li>
-		<div class="col-lg-10"> </div>
+		<div class="col-lg-9"> </div>
 		<button id="logInButton"type="button" class="btn btn-primary btn-lg" >Log In</button>
 
 <!--		<a href ="logInScreen.html ">
@@ -32,10 +32,10 @@
 					<h1>Fest Finder</h1>
 					<p>Find Events &middot; Find Local Artists</p>
 					<a href="trending.html">
-					<button id="list2" type="button" class="btn btn-primary">Trending Events!</button>
+					<button id="list2" type="button" class="btn btn-primary">Trending Now!</button>
 					</a>
 					<a href="favList.html">
-					<button id="list" type="button" class="btn btn-primary">Your Favorites Artists</button>
+					<button id="list" type="button" class="btn btn-primary">Your Favorites</button>
 					</a>
 				</div>
 			</div>
@@ -45,13 +45,13 @@
 			<div class="col-lg-6">
 				<a href="events/eventHome.html">
 					<img src="images/festivalBackdrop.jpg" alt="festival image" class="img-thumbnail">
-					<button class="btn btn-primary btn-lg">Events Coming Up</button>
+					<button class="btn btn-primary btn-lg">Explore Events</button>
 				</a>
 			</div>
 			<div class="col-lg-6">
 				<a href="artists/artistsHome.html">
 					<img src="images/artists.jpg" alt="artist image" class="img-thumbnail">
-					<button class="btn btn-primary btn-lg">Artists To See</button>
+					<button class="btn btn-primary btn-lg">Explore Artists</button>
 				</a>
 			</div>
 		</div>
@@ -76,19 +76,33 @@
 				localStorage.setItem('logged_in', 1);
 			}
 			else {
-				location.reload();
+				if(localStorage.getItem("logged_in") == 1){
+					$("#welcomeName").html("Welcome");
+					$("#logInButton").html("Log In");
+				localStorage.setItem('logged_in', 0);
 			}
+		}
 
 		});
 
 	</script>
 
-<script>
- function loadFunction() {
-	localStorage.setItem('logged_in', 0);
+	<script>
+	function loadFunction() {
+		if (localStorage.getItem("logged_in") === null) {
+			localStorage.setItem('logged_in', 0);
+		}
+		else if(localStorage.getItem("logged_in") == 1){
+			if("user_name" in localStorage){
+				var userName = localStorage.getItem("user_name");
+				$("#welcomeName").html("Welcome " + userName + "!");
+				$("#logInButton").html("Log Out");
+			}
+		}
+	}
+	</script>
 
-}
-</script>
+
 
 </body>
 </html>

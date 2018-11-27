@@ -415,6 +415,11 @@ $(document).ready(function(){
 		counter = 0;
 	});
 	
+	$('#logInButton').click(function(){
+		sessionStorage.clear();
+		counter = 0;
+	});
+	
 
 	
 	
