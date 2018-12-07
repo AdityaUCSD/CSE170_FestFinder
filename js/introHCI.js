@@ -4,6 +4,11 @@ $(document).ready(function(){
 	$('#p3').hide();
 	$('#p4').hide();
 	$('#p5').hide();
+	$('#p6').hide();
+	$('#p7').hide();
+	$('#p8').hide();
+	$('#p9').hide();
+	$('#p10').hide();
 	$('#tr1').mouseenter(function(){
 		$('#p1').show();
 	});
@@ -34,6 +39,36 @@ $(document).ready(function(){
 	$('#tr5').mouseleave(function(){
 		$('#p5').hide();
 	});
+	$('#tr6').mouseenter(function(){
+		$('#p6').show();
+	});
+	$('#tr6').mouseleave(function(){
+		$('#p6').hide();
+	});
+	$('#tr7').mouseenter(function(){
+		$('#p7').show();
+	});
+	$('#tr7').mouseleave(function(){
+		$('#p7').hide();
+	});
+	$('#tr8').mouseenter(function(){
+		$('#p8').show();
+	});
+	$('#tr8').mouseleave(function(){
+		$('#p8').hide();
+	});
+	$('#tr9').mouseenter(function(){
+		$('#p9').show();
+	});
+	$('#tr9').mouseleave(function(){
+		$('#p9').hide();
+	});
+	$('#tr10').mouseenter(function(){
+		$('#p10').show();
+	});
+	$('#tr10').mouseleave(function(){
+		$('#p10').hide();
+	});
 	$('#name').click(function(){
 		$('#findName').show();
 	});
@@ -43,7 +78,7 @@ $(document).ready(function(){
 	$('#name2').click(function(){
 		$('#message').fadeOut();
 	});
-	
+
 
 	//display favorite1
 	var str;
@@ -55,7 +90,7 @@ $(document).ready(function(){
 			$('#link1').html(favorite1);
 		}
 	}
-	
+
 	//display favorite2
 	var str2;
 	var string2 = sessionStorage.getItem('name2');
@@ -146,7 +181,7 @@ $(document).ready(function(){
 			$('#link10').html(favorite10);
 		}
 	}
-	
+
 	//display favorite11
 	var str11;
 	var string11 = sessionStorage.getItem('name11');
@@ -157,7 +192,7 @@ $(document).ready(function(){
 			$('#link11').html(favorite11);
 		}
 	}
-	
+
 	//display favorite12
 	var str12;
 	var string12 = sessionStorage.getItem('name12');
@@ -237,9 +272,9 @@ $(document).ready(function(){
 		var x = document.getElementById("favComedian1");
     		if (x.innerHTML === "Favorite this artist!") {
         		x.innerHTML = "Favorited!";
-    		} 
+    		}
 	});
-	
+
 	//click favorite on comedian 2
 	$('#favComedian2').click(function(){
 		var comedianName2 = "Joe King";
@@ -249,7 +284,7 @@ $(document).ready(function(){
 		var x = document.getElementById("favComedian2");
     		if (x.innerHTML === "Favorite this artist!") {
         		x.innerHTML = "Favorited!";
-    		} 
+    		}
 	});
 	//click favorite on music 1
 	$('#rapFav').click(function(){
@@ -260,7 +295,7 @@ $(document).ready(function(){
 		var x = document.getElementById("rapFav");
     		if (x.innerHTML === "Favorite this artist!") {
         		x.innerHTML = "Favorited!";
-    		} 
+    		}
 	});
 	//click favorite on music 2
 	$('#popFav').click(function(){
@@ -271,7 +306,7 @@ $(document).ready(function(){
 		var x = document.getElementById("popFav");
     		if (x.innerHTML === "Favorite this artist!") {
         		x.innerHTML = "Favorited!";
-    		} 
+    		}
 	});
 	//click favorite on music 3
 	$('#countryFav').click(function(){
@@ -282,7 +317,7 @@ $(document).ready(function(){
 		var x = document.getElementById("countryFav");
     		if (x.innerHTML === "Favorite this artist!") {
         		x.innerHTML = "Favorited!";
-    		} 
+    		}
 	});
 	//click favorite on music 3
 	$('#dancer1Fav').click(function(){
@@ -293,7 +328,7 @@ $(document).ready(function(){
 		var x = document.getElementById("dancer1Fav");
     		if (x.innerHTML === "Favorite this artist!") {
         		x.innerHTML = "Favorited!";
-    		} 
+    		}
 	});
 	//click favorite on music 3
 	$('#comedian3').click(function(){
@@ -304,7 +339,7 @@ $(document).ready(function(){
 		var x = document.getElementById("comedian3");
     		if (x.innerHTML === "Favorite this artist!") {
         		x.innerHTML = "Favorited!";
-    		} 
+    		}
 	});
 	//click favorite on dancer2
 	$('#dancer2').click(function(){
@@ -315,7 +350,7 @@ $(document).ready(function(){
 		var x = document.getElementById("dancer2");
     		if (x.innerHTML === "Favorite this artist!") {
         		x.innerHTML = "Favorited!";
-    		} 
+    		}
 	});
 	//click favorite on dancer3
 	$('#dancer3').click(function(){
@@ -326,7 +361,7 @@ $(document).ready(function(){
 		var x = document.getElementById("dancer3");
     		if (x.innerHTML === "Favorite this artist!") {
         		x.innerHTML = "Favorited!";
-    		} 
+    		}
 	});
 	//click favorite on dancer3
 	$('#event2').click(function(){
@@ -337,7 +372,7 @@ $(document).ready(function(){
 		var x = document.getElementById("event2");
     		if (x.innerHTML === "Favorite this event!") {
         		x.innerHTML = "Favorited!";
-    		} 
+    		}
 	});
 	//click favorite on dancer3
 	$('#event3').click(function(){
@@ -348,7 +383,7 @@ $(document).ready(function(){
 		var x = document.getElementById("event3");
     		if (x.innerHTML === "Favorite this event!") {
         		x.innerHTML = "Favorited!";
-    		} 
+    		}
 	});
 	//click favorite on dancer3
 	$('#event4').click(function(){
@@ -359,7 +394,7 @@ $(document).ready(function(){
 		var x = document.getElementById("event4");
     		if (x.innerHTML === "Favorite this event!") {
         		x.innerHTML = "Favorited!";
-    		} 
+    		}
 	});
 	//click favorite on dancer3
 	$('#event5').click(function(){
@@ -370,7 +405,7 @@ $(document).ready(function(){
 		var x = document.getElementById("event5");
     		if (x.innerHTML === "Favorite this event!") {
         		x.innerHTML = "Favorited!";
-    		} 
+    		}
 	});
 	//click favorite on dancer3
 	$('#event6').click(function(){
@@ -381,7 +416,7 @@ $(document).ready(function(){
 		var x = document.getElementById("event6");
     		if (x.innerHTML === "Favorite this event!") {
         		x.innerHTML = "Favorited!";
-    		} 
+    		}
 	});
 	//click favorite on dancer3
 	$('#event7').click(function(){
@@ -392,7 +427,7 @@ $(document).ready(function(){
 		var x = document.getElementById("event7");
     		if (x.innerHTML === "Favorite this event!") {
         		x.innerHTML = "Favorited!";
-    		} 
+    		}
 	});
 	//click favorite on dancer3
 	$('#event8').click(function(){
@@ -403,7 +438,7 @@ $(document).ready(function(){
 		var x = document.getElementById("event8");
     		if (x.innerHTML === "Favorite this event!") {
         		x.innerHTML = "Favorited!";
-    		} 
+    		}
 	});
 	//click favorite on dancer3
 	$('#event9').click(function(){
@@ -414,7 +449,7 @@ $(document).ready(function(){
 		var x = document.getElementById("event9");
     		if (x.innerHTML === "Favorite this event!") {
         		x.innerHTML = "Favorited!";
-    		} 
+    		}
 	});
 	//click favorite on dancer3
 	$('#event10').click(function(){
@@ -425,9 +460,9 @@ $(document).ready(function(){
 		var x = document.getElementById("event10");
     		if (x.innerHTML === "Favorite this event!") {
         		x.innerHTML = "Favorited!";
-    		} 
+    		}
 	});
-	
+
 
 
 
@@ -441,13 +476,13 @@ $(document).ready(function(){
 		sessionStorage.clear();
 		counter = 0;
 	});
-	
+
 	$('#logInButton').click(function(){
 		sessionStorage.clear();
 		counter = 0;
 	});
-	
 
-	
-	
+
+
+
 });
